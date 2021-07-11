@@ -1,0 +1,16 @@
+body
+{
+    background-size: cover;
+}
+
+.head
+{
+    width: 100%;
+    font-family: 'Zen Loop', cursive;
+}
+
+canvas
+{
+    border: 5px solid green;
+    box-shadow: 5px 5px 5px darkgreen;
+}
