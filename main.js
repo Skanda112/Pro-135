@@ -1,15 +1,31 @@
 
+status = "";
+
 
 function setup()
 {
-    canvas = createCanvas(500, 350);
-    canvas.position(430, 250);
-
+    canvas = createCanvas(380, 380);
+    canvas.center();
     video = createCapture(VIDEO);
-    video.hide();
+    video.size(380, 380);
+    video.hide();    
+}
+
+
+function start()
+{
+    objectDetector = ml5.objectDetector('cocossd', modelLoaded);
+    document.getElementById("status").innerHTML = "STATUS : DETECTING OBJECTS";
+    document.getElementById("name").value;
 }
 
 function draw()
 {
-    image(video, 0, 0, 500, 350);
+    image(video, 0, 0, 380, 380);
+}
+
+function modelLoaded()
+{
+    console.log("Model Loaded!");
+    status = true;
 }

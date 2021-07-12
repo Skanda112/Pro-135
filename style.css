@@ -13,4 +13,6 @@ canvas
 {
     border: 5px solid green;
     box-shadow: 5px 5px 5px darkgreen;
+    margin-top: 150px;
+    border-radius: 30px;
 }
